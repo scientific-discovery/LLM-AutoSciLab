@@ -84,22 +84,6 @@ python scripts/run_grn_prompt_budget.py \
   --workers 4
 ```
 
-## Notes
-
-- The Newton oracle expects the bundled `newtonbench_vendor/` directory to remain adjacent to `autoscilab/`.
-- The packaged ChemBench default path runs without requiring a local ensemble server. The `--ensemble-url` flag only matters if you explicitly enable or adapt an ensemble-backed configuration.
-- Results are written as JSON summaries in benchmark-specific subdirectories under `results/`.
-
-## Smoke Test
-
-The packaged runners were smoke-tested from this release tree by checking the CLI entry points and the wrapper launcher:
-
-```bash
-python scripts/run_newton_llm_autoscilab_budget.py --help
-python scripts/run_chembench_llm_autoscilab_budget.py --help
-python scripts/run_grn_prompt_budget.py --help
-python scripts/run_all_benchmarks.py --help
-```
 
 For a lightweight live run, use:
 
